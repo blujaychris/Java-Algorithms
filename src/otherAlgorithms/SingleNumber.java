@@ -6,20 +6,33 @@ import java.util.stream.Collectors;
 public class SingleNumber {
 
     public static int getSingleNumberFromSequence(String choice, int[] sequence) {
+        long startTime;
+        long elapsedTime;
+
         int result;
         switch (choice) {
             case "usingHashMap":
+                startTime = System.nanoTime();
                 result = usingHashMap(sequence);
+                elapsedTime = System.nanoTime() - startTime;
+                System.out.println("Total execution time to create 1000K objects in Java in millis: " + elapsedTime);
                 break;
             case "usingRawLoops":
+                startTime = System.nanoTime();
                 result = usingRawLoops(sequence);
+                elapsedTime = System.nanoTime() - startTime;
+                System.out.println("Total execution time to create 1000K objects in Java in millis: " + elapsedTime);
                 break;
             case "usingStreams":
+                startTime = System.nanoTime();
                 result = usingStreams(sequence);
+                elapsedTime = System.nanoTime() - startTime;
+                System.out.println("Total execution time to create 1000K objects in Java in millis: " + elapsedTime);
                 break;
             default:
                 result = 0;
         }
+
         return result;
     }
 
