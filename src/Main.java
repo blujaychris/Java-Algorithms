@@ -1,4 +1,5 @@
 import static helpers.Printing.print;
+import static otherAlgorithms.CharactersNumbers.returnNumberOfCharacters;
 import static otherAlgorithms.SingleNumber.getSingleNumberFromSequence;
 import static popularAlgorithms.Anagram.isStringAnagram;
 import static popularAlgorithms.Fibonacci.returnFibonacciSequence;
@@ -16,5 +17,6 @@ public class Main {
         print(getSingleNumberFromSequence("usingHashMap", sequenceWithSingleNumber));
         print(getSingleNumberFromSequence("usingRawLoops", sequenceWithSingleNumber));
         print(getSingleNumberFromSequence("usingStreams", sequenceWithSingleNumber));
+        print(returnNumberOfCharacters("aaaafdafsdefsxdgnooggogojogf"));
     }
 }
