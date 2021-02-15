@@ -1,5 +1,7 @@
 package helpers;
 
+import java.util.Map;
+
 public class Printing {
 
     public static void print(boolean parameter) {
@@ -30,5 +32,11 @@ public class Printing {
         for (int i = 0; i < parameter.length; i++) {
             System.out.println(parameter[i]);
         }
+    }
+
+    public static void print(Map<Character,Integer> parameters) {
+        for (Map.Entry<Character,Integer> entry : parameters.entrySet())
+            System.out.println("Character = " + entry.getKey() +
+                    ", Quantity = " + entry.getValue());
     }
 }
