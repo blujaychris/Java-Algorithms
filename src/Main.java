@@ -2,6 +2,7 @@ import static helpers.Printing.print;
 import static otherAlgorithms.CharactersNumbers.returnNumberOfCharacters;
 import static otherAlgorithms.DuplicateNumbers.getDuplicateNumbers;
 import static otherAlgorithms.SingleNumber.getSingleNumberFromSequence;
+import static otherAlgorithms.UniqueCharacters.areAllCharactersUnique;
 import static popularAlgorithms.Anagram.isStringAnagram;
 import static popularAlgorithms.Fibonacci.returnFibonacciSequence;
 import static popularAlgorithms.Palindrome.isStringPalindrome;
@@ -20,5 +21,6 @@ public class Main {
         print(getSingleNumberFromSequence("usingStreams", sequenceWithSingleNumber));
         print(returnNumberOfCharacters("aaaafdafsdefsxdgnooggogojogf"));
         print(getDuplicateNumbers(new int[]{1, 5, 3, 8, 2, 2, 1, 1}));
+        print(areAllCharactersUnique("abc"));
     }
 }
