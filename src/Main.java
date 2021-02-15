@@ -1,6 +1,7 @@
 import static helpers.Printing.print;
 import static otherAlgorithms.CharactersNumbers.returnNumberOfCharacters;
 import static otherAlgorithms.DuplicateNumbers.getDuplicateNumbers;
+import static otherAlgorithms.Flip.flipItVerticalAxis;
 import static otherAlgorithms.SingleNumber.getSingleNumberFromSequence;
 import static otherAlgorithms.UniqueCharacters.areAllCharactersUnique;
 import static popularAlgorithms.Anagram.isStringAnagram;
@@ -22,5 +23,9 @@ public class Main {
         print(returnNumberOfCharacters("aaaafdafsdefsxdgnooggogojogf"));
         print(getDuplicateNumbers(new int[]{1, 5, 3, 8, 2, 2, 1, 1}));
         print(areAllCharactersUnique("abc"));
+        int[][] matrix2D = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+        print(matrix2D);
+        flipItVerticalAxis(matrix2D);
+        print(matrix2D);
     }
 }

@@ -43,8 +43,9 @@ public class Printing {
     public static void print(int[][] parameter) {
         for (int i = 0; i <= parameter.length - 1; i++) {
             for (int j = 0; j <= parameter[0].length - 1; j++) {
-                System.out.println(parameter[i][j]);
+                System.out.print(parameter[i][j] + " ");
             }
+            System.out.println();
         }
     }
 }
