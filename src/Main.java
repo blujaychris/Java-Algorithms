@@ -12,6 +12,7 @@ public class Main {
         print(isStringPalindrome("redivider"));
         print(returnFibonacciSequence(10));
         print(isStringAnagram("abcdefg","agbfced"));
-        print(getSingleNumberFromSequence("usingHashMap",new int[]{1, 5, 3, 8, 2}));
+        int[] sequenceWithSingleNumber = {1,1,1,2,2,3,3,4,4,4,5};
+        print(getSingleNumberFromSequence("usingHashMap", sequenceWithSingleNumber));
     }
 }
