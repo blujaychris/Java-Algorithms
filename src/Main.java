@@ -14,5 +14,7 @@ public class Main {
         print(isStringAnagram("abcdefg","agbfced"));
         int[] sequenceWithSingleNumber = {1,1,1,2,2,3,3,4,4,4,5};
         print(getSingleNumberFromSequence("usingHashMap", sequenceWithSingleNumber));
+        print(getSingleNumberFromSequence("usingRawLoops", sequenceWithSingleNumber));
+        print(getSingleNumberFromSequence("usingStreams", sequenceWithSingleNumber));
     }
 }
