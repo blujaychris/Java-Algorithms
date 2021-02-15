@@ -1,4 +1,5 @@
 import static helpers.Printing.print;
+import static otherAlgorithms.SingleNumber.getSingleNumberFromSequence;
 import static popularAlgorithms.Anagram.isStringAnagram;
 import static popularAlgorithms.Fibonacci.returnFibonacciSequence;
 import static popularAlgorithms.Palindrome.isStringPalindrome;
@@ -11,5 +12,6 @@ public class Main {
         print(isStringPalindrome("redivider"));
         print(returnFibonacciSequence(10));
         print(isStringAnagram("abcdefg","agbfced"));
+        print(getSingleNumberFromSequence("usingHashMap",new int[]{1, 5, 3, 8, 2}));
     }
 }

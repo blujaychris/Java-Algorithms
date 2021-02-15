@@ -8,8 +8,8 @@ public class SingleNumber {
     public static int getSingleNumberFromSequence(String choice, int[] sequence) {
         int result;
         switch (choice) {
-            case "usingHashTable":
-                result = usingHashTable(sequence);
+            case "usingHashMap":
+                result = usingHashMap(sequence);
                 break;
             default:
                 result = 0;
@@ -17,7 +17,7 @@ public class SingleNumber {
         return result;
     }
 
-    private static int usingHashTable(int[] sequence) {
+    private static int usingHashMap(int[] sequence) {
         Map<Integer, Integer> numbersTable = new HashMap<>();
         int length;
         Integer number;
