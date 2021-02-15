@@ -10,10 +10,6 @@ public class BinarySearch {
 
         Arrays.sort(arr);
 
-        for (int i = 0; i < arr.length - 1; i++) {
-            System.out.println(arr[i]);
-        }
-
         // Think about maintaining the boundaries of your array with a lo
         // index and a hi index. lo=0; hi=length - 1;
         int lo = 0;
@@ -27,11 +23,10 @@ public class BinarySearch {
             if (arr[mid] < n) lo = mid + 1;
                 // Else If arr[mid] > n, set hi = mid - 1 to divide the array
             else if (arr[mid] > n) hi = mid - 1;
-                // Otherwise, return true!
-            else Printing.print(true);
+            // Otherwise, return true!
+            else
+                return true;
         }
         return false;
     }
-
-
 }
