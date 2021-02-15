@@ -1,7 +1,7 @@
 package otherAlgorithms;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class SingleNumber {
 
@@ -13,6 +13,9 @@ public class SingleNumber {
                 break;
             case "usingRawLoops":
                 result = usingRawLoops(sequence);
+                break;
+            case "usingStreams":
+                result = usingStreams(sequence);
                 break;
             default:
                 result = 0;
@@ -58,6 +61,20 @@ public class SingleNumber {
                 repeated = false;
             } else {
                 return sequence[i];
+            }
+        }
+        return 0;
+    }
+    public static int usingStreams(int[] A) {
+        if (A == null || A.length < 1) return 0;
+
+        List<Integer> list = Arrays.stream(A)
+                .boxed()
+                .collect(Collectors.toList());
+
+        for (Integer i : list) {
+            if (Collections.frequency(list, i) <= 1) {
+                return i;
             }
         }
         return 0;
