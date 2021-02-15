@@ -5,9 +5,10 @@ import java.util.stream.Collectors;
 
 public class SingleNumber {
 
+    static long startTime;
+    static long elapsedTime;
+
     public static int getSingleNumberFromSequence(String choice, int[] sequence) {
-        long startTime;
-        long elapsedTime;
 
         int result;
         switch (choice) {
